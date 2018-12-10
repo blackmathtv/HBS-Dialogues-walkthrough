@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HBS Dialogues - walkthrough v1.0</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="#" class="scene" data-id="0-000_exterior_01">
+        <li class="text">000_exterior_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="1-000_exterior_02">
+        <li class="text">000_exterior_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="2-000_exterior_03">
+        <li class="text">000_exterior_03</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="3-000_exterior_04">
+        <li class="text">000_exterior_04</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="4-001_klarman_entrance_00">
+        <li class="text">001_klarman_entrance_00</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="5-001_klarman_entrance_01">
+        <li class="text">001_klarman_entrance_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="6-001_klarman_entrance_02">
+        <li class="text">001_klarman_entrance_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="7-001_klarman_entrance_05">
+        <li class="text">001_klarman_entrance_05</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="8-001_klarman_entrance_06">
+        <li class="text">001_klarman_entrance_06</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="9-001_klarman_entrance_07">
+        <li class="text">001_klarman_entrance_07</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="10-001_klarman_foyer_01">
+        <li class="text">001_klarman_foyer_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="11-001_klarman_foyer_02">
+        <li class="text">001_klarman_foyer_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="12-001_klarman_foyer_03">
+        <li class="text">001_klarman_foyer_03</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="13-001_klarman_foyer_04">
+        <li class="text">001_klarman_foyer_04</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="14-001_klarman_entrance_left_01">
+        <li class="text">001_klarman_entrance_left_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="15-001_klarman_right_walkway">
+        <li class="text">001_klarman_right_walkway</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="16-001_klarman_seating_center_med">
+        <li class="text">001_klarman_seating_center_med</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="17-001_klarman_seating_left_close">
+        <li class="text">001_klarman_seating_left_close</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="18-001_klarman_seating_right_close">
+        <li class="text">001_klarman_seating_right_close</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="19-001_klarman_stage-center">
+        <li class="text">001_klarman_stage center</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="20-001_klarman_stage-podium">
+        <li class="text">001_klarman_stage podium</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="21-001_klarman_stage-right">
+        <li class="text">001_klarman_stage right</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="22-003_pavilion_01">
+        <li class="text">003_pavilion_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="23-003_pavilion_02">
+        <li class="text">003_pavilion_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="24-003_pavilion_03">
+        <li class="text">003_pavilion_03</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="25-003_pavilion_05">
+        <li class="text">003_pavilion_05</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="26-003_pavilion_06">
+        <li class="text">003_pavilion_06</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="27-003_pavilion_07">
+        <li class="text">003_pavilion_07</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="28-003_pavilion_08">
+        <li class="text">003_pavilion_08</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="29-003_pavilion_09">
+        <li class="text">003_pavilion_09</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="30-004_exterior_01">
+        <li class="text">004_exterior_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="31-004_exterior_02">
+        <li class="text">004_exterior_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="32-004_exterior_03">
+        <li class="text">004_exterior_03</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="33-005_exterior_01">
+        <li class="text">005_exterior_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="34-005_path_to_chao_hall">
+        <li class="text">005_path_to_chao_hall</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="35-005_exterior_01-return">
+        <li class="text">005_exterior_01-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="36-006_chao_exterior_01">
+        <li class="text">006_chao_exterior_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="37-006_chao_exterior_02">
+        <li class="text">006_chao_exterior_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="38-005_exterior_02-return">
+        <li class="text">005_exterior_02-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="39-006_chao_01">
+        <li class="text">006_chao_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="40-006_chao_02">
+        <li class="text">006_chao_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="41-006_chao_03">
+        <li class="text">006_chao_03</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="42-006_chao_04">
+        <li class="text">006_chao_04</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="43-006_chao_06">
+        <li class="text">006_chao_06</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="44-006_chao_01_exit">
+        <li class="text">006_chao_01_exit</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="45-006_chao_exterior_01_exit">
+        <li class="text">006_chao_exterior_01_exit</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="46-006_choa_fl2_left">
+        <li class="text">006_choa_fl2_left</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="47-006_choa_fl2_right">
+        <li class="text">006_choa_fl2_right</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="48-006_chao_03-return">
+        <li class="text">006_chao_03-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="49-006_choa_birds_and_the_bees_01">
+        <li class="text">006_choa_birds_and_the_bees_01</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="50-006_choa_birds_and_the_bees_02">
+        <li class="text">006_choa_birds_and_the_bees_02</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="51-006_choa_fl2_rear">
+        <li class="text">006_choa_fl2_rear</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="52-003_pavilion_01-return">
+        <li class="text">003_pavilion_01-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="53-003_pavilion_06-leave">
+        <li class="text">003_pavilion_06-leave</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="54-001_klarman_entrance_center">
+        <li class="text">001_klarman_entrance_center</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="55-001_klarman_entrance_left">
+        <li class="text">001_klarman_entrance_left</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="56-001_klarman_entrance_right">
+        <li class="text">001_klarman_entrance_right</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="57-001_klarman_foyer_02-return">
+        <li class="text">001_klarman_foyer_02-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="58-001_klarman_foyer_01-return">
+        <li class="text">001_klarman_foyer_01-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="59-001_klarman_entrance_02-return">
+        <li class="text">001_klarman_entrance_02-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="60-001_klarman_stage_left">
+        <li class="text">001_klarman_stage_left</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="61-001_klarman_by_av-hq">
+        <li class="text">001_klarman_by_AV-HQ</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="62-001_klarman_stage_front">
+        <li class="text">001_klarman_stage_front</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="63-001_klarman_seating_top">
+        <li class="text">001_klarman_seating_top</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="64-001_klarman_foyer_05-return">
+        <li class="text">001_klarman_foyer_05-return</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="65-001_klarman_balcony_center">
+        <li class="text">001_klarman_balcony_center</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="#" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="#" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="#" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="#" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="#" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="#" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="#" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="#" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="#" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
